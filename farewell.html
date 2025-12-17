@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewell Card</title>
+    <link rel="stylesheet" href="farewell-style.css">
+    <!-- html2canvas for download-as-image functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="farewell-container">
+        <div class="farewell-card">
+            <div class="card-content">
+                <div class="card-header">
+                    <h1 class="farewell-title">Farewell</h1>
+                    <div class="decorative-line"></div>
+                </div>
+
+                <div class="student-info">
+                    <p class="greeting">Dear,</p>
+                    <h2 class="student-name" id="displayName">Student Name</h2>
+                    <p class="info-text">Class: <span id="displayClass">--</span></p>
+                    <p class="info-text">Section: <span id="displaySection">--</span></p>
+                </div>
+
+                <div class="card-message">
+                    <p>
+                        As you embark on this new journey, we wish you all the best. 
+                        Your dedication, hard work, and spirit have been an inspiration. 
+                        May you achieve great heights and create wonderful memories ahead.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <p class="farewell-wishes">Wishing You Success & Happiness! 🎓</p>
+                    <p class="date" id="cardDate"></p>
+                </div>
+            </div>
+
+            <div class="card-actions">
+                <button class="action-btn print-btn" onclick="printCard()">Print Card</button>
+                <button class="action-btn download-btn" onclick="downloadCard()">Download</button>
+                <button class="action-btn back-btn" onclick="goBack()">Edit Info</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="farewell-script.js"></script>
+</body>
+</html>
